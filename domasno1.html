@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pizza</title>
+</head>
+
+<body>
+    <style>
+            body {
+    text-align: center;
+}  
+    </style>
+    
+<h1><strong>Order Pizza!</strong></h1>
+<form method="post" action="https://lapizza.mk">
+<p>
+<strong>Select the pizza size: </strong><br>
+<input name="pizzasize" type="radio" 
+value="big" checked>
+<label>Big</label><br>
+<input name="pizzasize" type="radio" 
+value="medium">
+<label>Medium</label><br>
+<input name="pizzasize" type="radio" 
+value="small">
+<label>Small</label>
+</p>
+
+<p>
+<label><strong>Select the crust type:</strong><br>
+<select name="crust">
+<option selected>Deep Dish</option>
+<option>Thin</option>
+<option>Flatbread</option>
+<option>Stuffed</option>
+<option>Gluten-Free</option>
+<option>Crispy</option>
+</select>
+</p>
+
+<p><strong>Select the filler:</strong><br>
+<input name="filler" type="checkbox" 
+value="sausages">
+<label>Sausages</label><br>
+<input name="filler" type="checkbox"
+value="pepper">
+<label>Pepper</label><br>
+<input name="filler" type="checkbox"
+value="mushrooms">
+<label>Mushrooms</label>
+</p>
+
+<p>
+<label><strong>Name: </strong>
+<input name="name" type="text" required>
+</label>
+</p>
+<p>
+<label><strong>Phone:</strong>
+<input name="phone" type="tel" > 
+</label>
+</p>
+
+<p>
+<label>
+<textarea name="message" 
+rows="3" cols="35"> Message: </textarea>
+</label>
+</p>
+
+
+
+
+<p>
+<input type="submit" value="Send" />
+<input type="reset" value="Reset" />
+</p>
+</form>
+</body>
+</html>
